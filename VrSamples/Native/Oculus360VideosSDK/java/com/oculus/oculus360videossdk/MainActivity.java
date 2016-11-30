@@ -335,6 +335,7 @@ public class MainActivity extends VrActivity implements SurfaceTexture.OnFrameAv
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
+        //
         return true;
     }
 
