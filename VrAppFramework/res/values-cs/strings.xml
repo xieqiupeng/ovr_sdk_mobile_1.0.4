@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- See fburl.com/140690840 for information about i18n on Android -->
+<!-- @generated -->
+<!-- FB Locale: cs_CZ -->
+
+<resources exclude-from-buck-resource-map="true">
+    <string name="swipe_to_browse" gender="unknown">Prochází se přejetím prstem</string>
+    <string name="out_of_memory" gender="unknown">Pokud chcete aplikaci Oculus 360 Photos používat, uvolněte v úložišti telefonu aspoň %1$s kB.</string>
+</resources>

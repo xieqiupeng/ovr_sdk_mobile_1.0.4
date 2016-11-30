@@ -1,0 +1,114 @@
+VrSamples/Native/Oculus360VideosSDK/Projects/Android/build/
+VrAppSupport/VrLocale/Projects/Android/build/
+VrAppSupport/VrSound/Projects/Android/build/
+
+# Android generated
+bin
+gen
+libs
+obj
+build
+lint.xml
+
+# IntelliJ IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+classes
+gen-external-apklibs
+
+# Eclipse
+.project
+.classpath
+.settings
+.checkstyle
+.cproject
+
+# Gradle
+.gradle
+build
+out
+
+# Maven
+target
+release.properties
+pom.xml.*
+
+# Ant
+ant.properties
+local.properties
+proguard.cfg
+proguard-project.txt
+
+# Other
+.DS_Store
+dist
+tmp
+
+# VP9 extension
+extensions/vp9/src/main/jni/libvpx
+extensions/vp9/src/main/jni/libvpx_android_configs
+extensions/vp9/src/main/jni/libyuv
+
+# Opus extension
+extensions/opus/src/main/jni/libopus
+
+# FLAC extension
+extensions/flac/src/main/jni/flac
+
+VrAppSupport/VrGUI/res/raw/
+*.mp4
+*.jpg
+*.png
+VrAppFramework/Projects/AndroidPrebuilt/gradle/
+gradle/
+*.lxo
+*.tga
+*.otf
+*.ttf
+*.wav
+*.pvr
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio
+.idea/
+.gradle
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
+/*/*/gradlew
+/*/*/gradlew.bat
+
+VrSamples/Native/Oculus360VideosSDK/Projects/Android/oculus360videossdk-release.apk
+VrSamples/Native/CinemaSDK/Projects/Android/gradlew
+VrSamples/Native/CinemaSDK/Projects/Android/
+VrSamples/Native/Oculus360VideosSDK/assets/oculussig_0815f848777f0504
+VrSamples/Native/Oculus360VideosSDK/assets/
+*.bat

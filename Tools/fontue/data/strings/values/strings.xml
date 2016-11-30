@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res-auto"
+    xsi:noNamespaceSchemaLocation="../../../../../../i18n/hack/fbtstrings.xsd"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:ignore="MissingTranslation"
+    >
+  <string
+      name="app_name"
+      project="oculus-360-photos"
+      description="The title of the application, which lets you browse 360 panorama photos"
+      >Oculus 360 Photos</string>
+  <string
+      name="action_settings"
+      project="oculus-360-photos"
+      description="The name of the settings menu."
+      >Settings</string>
+  <string
+      name="mobile_notifications"
+      project="oculus-360-photos"
+      description="The title of the mobile notifications settings dialog"
+      >Mobile Notifications</string>
+  <string
+      name="mobile_notifications_message"
+      project="oculus-360-photos"
+      description="The message in the mobile notifications settings dialog"
+      >Get updates when new content is added to 360 Photos</string>
+  <string
+      name="cell_data_title"
+      project="oculus-360-photos"
+      description="The title of the cell data settings dialog"
+      >Cell Data Usage</string>
+  <string
+      name="cell_data_message"
+      project="oculus-360-photos"
+      description="Message for the cell data setting"
+      >Turns on data usage if there is no wifi connection.</string>
+  <string
+      name="cell_data_alert_message"
+      project="oculus-360-photos"
+      description="The message displayed when the user tries to load a pano while not on wifi"
+      >You are currently not connected to wifi.\nWould you like to stream photos over your data plan?</string>
+  <string
+      name="cell_data_alert_enable"
+      project="oculus-360-photos"
+      description="The button that enables data usage when asked in an alert."
+      >Turn On</string>
+  <string
+      name="cell_data_alert_cancel"
+      project="oculus-360-photos"
+      description="The button that cancels/hides the alert that asks for cell data access"
+      >Cancel</string>
+  <string
+      name="categories_title"
+      project="oculus-360-photos"
+      description="Categories screen title."
+      >Categories</string>
+  <string
+      name="unspecified_author"
+      project="oculus-360-photos"
+      description="Default author when there's no author information."
+      >Unspecified Author</string>
+  <string
+      name="on_device"
+      project="oculus-360-photos"
+      description="Title for the category containing content that is on the device"
+      >On Device</string>
+  <string
+      name="on_device_empty_title"
+      project="oculus-360-photos"
+      description="Title for when the 'on device' category is empty"
+      >To view your own panoramic photos in Oculus 360 Photos:</string>
+  <string
+      name="on_device_empty_instructions"
+      project="oculus-360-photos"
+      description="Instructions on how to get your own panos showing up"
+      >To view your own 360 photos, save them to the gallery on your phone.</string>
+  <string
+      name="favorites_empty_title"
+      project="oculus-360-photos"
+      description="Title for when your favorite list is empty"
+      >You currently have no photos in your favorites list</string>
+  <string
+      name="remove_from_favorites"
+      project="oculus-360-photos"
+      description="Tooltip for the favorites button, when a pano is already in favorites"
+      >Remove from favorites</string>
+  <string
+      name="add_to_favorites"
+      project="oculus-360-photos"
+      description="Tooltip for the favorites button, when a pano is not in favorites"
+      >Add to favorites</string>
+  <string
+      name="slideshow_mode"
+      project="oculus-360-photos"
+      description="Label for the switch that starts/stops the slideshow feature"
+      >Slideshow Mode</string>
+  <string
+      name="favorites_empty"
+      project="oculus-360-photos"
+      description="Title for when your favorite list is empty"
+      >Tap the heart icon when viewing a photo to add it to your favorites.</string>
+  <string
+      name="more_of"
+      project="oculus-360-photos"
+      description="Some categories won't have enough panos to be published on their own. In this case, we group all panos under the same category and we name it 'More of parent_category_name' as in 'More of Asia'"
+      >More of <xliff:g id="parent_category_name">%1$s</xliff:g></string>
+  <string
+      name="by"
+      project="oculus-360-photos"
+      description="Preposition between the title and the author's name, indicating authorship."
+      >by <xliff:g id="photo_author">%1$s</xliff:g></string>
+  <string
+      name="media_not_found"
+      project="oculus-360-videos"
+      description="The message displayed when no media found on the phone."
+      >There are no photos on your phone. Please insert the SD card included with your Gear VR.</string>
+  <string
+      name="favorites"
+      project="oculus-360-photos"
+      description="The title of the folder where a user puts their favorite images."
+      >Favorites</string>
+  <string
+      name="error_nowifi"
+      project="oculus-360-photos"
+      description="When the app has no wifi, we cannot access online photos"
+      >Couldn\'t connect to Oculus 360 Photos. You can still view your offline photos.</string>
+  <string
+      name="error_noconnection"
+      project="oculus-360-photos"
+      description="When the app has wifi, but for some reason we still cannot connect to our server"
+      >Couldn\'t connect to Oculus 360 Photos. Try again later.</string>
+  <string
+      name="error_loading_file"
+      project="oculus-360-photos"
+      description="File load error notification"
+      >Error loading photo.</string>
+  <string
+      name="wifi_required"
+      project="oculus-360-photos"
+      description="No wifi notification"
+      >Wifi required</string>
+  <string
+      name="landscapes"
+      project="oculus-360-photos"
+      description="The title of the folder that contains landscape images."
+      >Landscapes</string>
+  <string
+      name="underwater"
+      project="oculus-360-photos"
+      description="The title of the folder that contains underwater scenes."
+      >Underwater</string>
+  <string
+      name="mars"
+      project="oculus-360-photos"
+      description="The title of the folder that contains images of the planet Mars."
+      >Mars</string>
+  <string
+      name="night_sky"
+      project="oculus-360-photos"
+      description="The title of the folder that contains images of the night sky."
+      >Night Sky</string>
+  <string
+      name="landmarks"
+      project="oculus-360-photos"
+      description="The title of the folder that contains images of landmarks."
+      >Landmarks</string>
+  <string
+      name="architecture"
+      project="oculus-360-photos"
+      description="The title of the folder that contains images of architecture."
+      >Architecture</string>
+  <string
+      name="cities"
+      project="oculus-360-photos"
+      description="The title of the folder that contains images of cities."
+      >Cities</string>
+  <string
+      name="ancient"
+      project="oculus-360-photos"
+      description="The title of the folder that contains ancient structures."
+      >Ancient</string>
+  <string
+      name="unusual"
+      project="oculus-360-photos"
+      description="The title of the folder that contains images of unusual places."
+      >Unusual</string>
+  <string
+      name="worship"
+      project="oculus-360-photos"
+      description="The title of the folder that contains images of places of worship."
+      >Worship</string>
+  <string
+      name="abandoned"
+      project="oculus-360-photos"
+      description="The title of the folder that contains images of abandoned places."
+      >Abandoned</string>
+  <string
+      name="ahu_tongariki_in_easter_island"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Ahu Tongariki in Easter Island</string>
+  <string
+      name="tunis_coliseum_upper_level"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Tunis Coliseum. Upper level</string>
+  <string
+      name="abhaneri_step_well_"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Abhaneri  Step Well </string>
+  <string
+      name="the_mayan_city_state_of_palenque"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The Mayan City State of Palenque</string>
+  <string
+      name="machu_picchu"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Machu Picchu</string>
+  <string
+      name="another_silkcotton_tree_at_ta_prohm"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Another Silk-Cotton Tree at Ta Prohm</string>
+  <string
+      name="glendalough"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Glendalough</string>
+  <string
+      name="the_bayon_towers_of_smiling_faces_cambodia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The Bayon. Towers of Smiling Faces [Cambodia]</string>
+  <string
+      name="pellegrina_tomb_chiusi"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Pellegrina Tomb, Chiusi</string>
+  <string
+      name="gym_pripyat_chernobyl"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Gym. Pripyat, Chernobyl</string>
+  <string
+      name="main_square_pripyat_chernobyl"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Main square. Pripyat, Chernobyl</string>
+  <string
+      name="swimming_pool_pripyat_chernobyl"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Swimming Pool. Pripyat, Chernobyl</string>
+  <string
+      name="the_ferris_wheel_pripyat_chernobyl"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The Ferris Wheel. Pripyat, Chernobyl</string>
+  <string
+      name="schweppes_neon_in_gran_via_madrid"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Schweppes neon in gran via. Madrid</string>
+  <string
+      name="barcelona_from_via_laietana"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Barcelona from via laietana</string>
+  <string
+      name="sheikh_zayed"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sheikh Zayed</string>
+  <string
+      name="the_louvre_paris_france"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The Louvre, Paris, France</string>
+  <string
+      name="tv_tower_berlin_2012"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >TV Tower Berlin 2012</string>
+  <string
+      name="john_hancock_center"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >John Hancock Center</string>
+  <string
+      name="fondamenta_de_la_preson_a_venezia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+    >Fondamenta de la Preson a Venezia</string>
+  <string
+      name="venice_rialtobridge"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Venice - Rialto-Bridge</string>
+  <string
+      name="view_from_eiffel_tower"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >View from Eiffel Tower</string>
+  <string
+      name="empire_state_building_full_360_aerial_manhattan_panorama"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Empire State Building full 360° aerial Manhattan panorama</string>
+  <string
+      name="calgary_zoo"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Calgary Zoo</string>
+  <string
+      name="las_vegas_from_the_eiffel_tower"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Las Vegas from the Eiffel Tower</string>
+  <string
+      name="gondole_a_venezia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Gondole a Venezia</string>
+  <string
+      name="aerial_panorama_of_shinjuku_shot_from_a_helicopter"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Aerial Panorama of Shinjuku shot from a Helicopter</string>
+  <string
+      name="clock_tower_after_sunrise"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Clock Tower after Sunrise</string>
+  <string
+      name="madinet_habu_path_to_second_court"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Madinet Habu - Path To Second court</string>
+  <string
+      name="petra_treasury_al_khazneh_jordan"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+    >Petra Treasury - Al Khazneh Jordan</string>
+  <string
+      name="eau_claire_calgary"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Eau Claire, Calgary</string>
+  <string
+      name="fitz_roy_valley_at_magic_hour"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Fitz Roy Valley at Magic Hour</string>
+  <string
+      name="horseshoe_bend_after_sunset"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Horseshoe Bend after sunset</string>
+  <string
+      name="upper_antelope_canyon"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Upper Antelope Canyon</string>
+  <string
+      name="del_norte_redwoods_state_park"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Del Norte Redwoods State Park</string>
+  <string
+      name="snowy_river"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Snowy River</string>
+  <string
+      name="hanging_bridge_over_a_crack_in_the_tsingy"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Hanging bridge over a crack in the Tsingy</string>
+  <string
+      name="halong_bay_3"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Halong Bay 3</string>
+  <string
+      name="animal_flower_cave"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Animal Flower Cave</string>
+  <string
+      name="phi_phi_lay_pileh_lagoon_thailand"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Phi Phi Lay, Pileh Lagoon, Thailand</string>
+  <string
+      name="mono_lake"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Mono Lake</string>
+  <string
+      name="partnachklamm"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Partnachklamm</string>
+  <string
+      name="amphitheater_terraces_of_batad_banaue_ifugao"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Amphitheater Terraces of Batad - Banaue, Ifugao</string>
+  <string
+      name="quesillococha_lake"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Quesillococha Lake</string>
+  <string
+      name="the_tree_the_sunset"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The Tree \u0026 The Sunset</string>
+  <string
+      name="faehlensee_and_bollenwees"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Faehlensee and Bollenwees</string>
+  <string
+      name="torres_del_paine_at_sunrise"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Torres del Paine at sunrise</string>
+  <string
+      name="gathering_storm_over_french_valley"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Gathering Storm over French Valley</string>
+  <string
+      name="aggitis_cave"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Aggitis Cave</string>
+  <string
+      name="inside_white_whale_rock_white_desert_"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Inside White Whale Rock - White Desert </string>
+  <string
+      name="mars_panorama_curiosity_rover_martian_night"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Mars Panorama - Curiosity rover: Martian night</string>
+  <string
+      name="mars_panorama_curiosity_rover_martian_solar_day_613"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Mars Panorama - Curiosity rover: Martian solar day 613</string>
+  <string
+      name="mars_panorama_curiosity_rover_martian_solar_day_437"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Mars Panorama - Curiosity rover: Martian solar day 437</string>
+  <string
+      name="mars_panorama_curiosity_rover_martian_solar_day_2"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Mars Panorama - Curiosity rover: Martian solar day 2</string>
+  <string
+      name="cape_spear_and_the_milky_way"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Cape Spear and the Milky Way</string>
+  <string
+      name="paepalanthus_galactic"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Paepalanthus Galactic</string>
+  <string
+      name="the_elephant_and_the_milkyway"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The Elephant and the Milkyway</string>
+  <string
+      name="sao_bento_waterfall_startrail_vortex"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sao Bento Waterfall Startrail  Vortex</string>
+  <string
+      name="man_owar_milky_way"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Man O\'war Milky Way</string>
+  <string
+      name="northern_light_near_kiruna"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Northern light near Kiruna</string>
+  <string
+      name="shiva_temple_65_foot_tall_lord_shiva_lingam"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Shiva Temple, 65 foot Tall Lord Shiva Lingam</string>
+  <string
+      name="yungang_grottoes_v_cave"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Yungang Grottoes - V Cave</string>
+  <string
+      name="zayed_mosque_abu_dhabi"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Zayed Mosque - Abu Dhabi</string>
+  <string
+      name="dambulla_cave_temple_fifth_cave_sri_lanka"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Dambulla cave temple, fifth cave, Sri lanka</string>
+  <string
+      name="szeged_synagogue"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Szeged Synagogue</string>
+  <string
+      name="aljamas_mosque_with_square_in_shibam_hadramawt_yemen"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Al-Jama\'s mosque with square in Shibam - Hadramawt - Yemen</string>
+  <string
+      name="fluctuation_follows_olho_dagua_river"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Fluctuation follows - Olho Dagua River.</string>
+  <string
+      name="pratinha_lake"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Pratinha Lake</string>
+  <string
+      name="maldives_gan"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Maldives Gan</string>
+  <string
+      name="sea_turtles_chelonia_mydas_amedee_new_caledonia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sea Turtles Chelonia mydas Amedee New Caledonia</string>
+  <string
+      name="diving_new_caledonia_amedee_island"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Diving New Caledonia Amedee Island</string>
+  <string
+      name="coral_reef_fish_new_caledonia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Coral Reef Fish New Caledonia</string>
+  <string
+      name="flight_above_the_clouds"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Flight above the Clouds</string>
+  <string
+      name="abu_dabab_garden"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Abu Dabab Garden</string>
+  <string
+      name="diving_with_sharks"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Diving with Sharks</string>
+  <string
+      name="mysterious_lagoon"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Mysterious Lagoon</string>
+  <string
+      name="giant_trevally_welcome_new_caledonia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Giant Trevally Welcome New Caledonia</string>
+  <string
+      name="old_projector_room_at_cinema_modern_suceava"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Old projector room at Cinema Modern, Suceava</string>
+  <string
+      name="planet_of_the_apes"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Planet of the Apes</string>
+  <string
+      name="large_helical_device"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Large Helical Device</string>
+  <string
+      name="bird_fish_feeding_frenzy_new_caledonia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Bird Fish Feeding Frenzy New Caledonia</string>
+  <string
+      name="national_aircraft_inc_airplane_junk_yard"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >National Aircraft Inc. - Airplane Junk Yard</string>
+  <string
+      name="inside_a_decommissioned_us_navy_c117d_iceland"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Inside a decommissioned US Navy C-117D, Iceland</string>
+  <string
+      name="yulong_bridgeyangshuoguilin"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Yulong bridge,yangshuo,guilin</string>
+  <string
+      name="church_in_zeliszow"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Church in Zeliszow</string>
+  <string
+      name="beneath_lower_byron_glacier"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Beneath Lower Byron Glacier</string>
+  <string
+      name="supertree_grove_gardens_by_the_bay_singapore"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Supertree Grove, Gardens by the Bay, Singapore</string>
+  <string
+      name="monumenta_2012_grand_palais_daniel_buren"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Monumenta 2012 Grand Palais Daniel Buren</string>
+  <string
+      name="henan_jiaozuo_world_geological_park_yuntai_mountain_9mastixia_peak_elevation_1308_meters"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Henan Jiaozuo World Geological Park Yuntai Mountain 9--Mastixia peak elevation 1308 meters</string>
+  <string
+      name="ankarafantsika_np_canyon"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Ankarafantsika NP Canyon</string>
+  <string
+      name="gwalia_historic_workshop"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Gwalia Historic Workshop</string>
+  <string
+      name="mysterious_lagoon_diving"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Mysterious Lagoon  Diving</string>
+  <string
+      name="histroric_alabama_theatre"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Histroric Alabama Theatre</string>
+  <string
+      name="dorset_lulworth_durdle_door_sunset"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Dorset. Lulworth. Durdle Door Sunset</string>
+  <string
+      name="flying_over_tokyo_in_a_golden_sunset"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Flying over Tokyo in a Golden Sunset</string>
+  <string
+      name="piazza_san_marco_at_night_venice_italy"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Piazza San Marco at Night, Venice, Italy</string>
+  <string
+      name="slheimajkulsvegur_glacier"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sólheimajökulsvegur Glacier</string>
+  <string
+      name="the_wave"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The Wave</string>
+  <string
+      name="ruhrgas"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Ruhrgas</string>
+  <string
+      name="nasir_al_mulk_mosque_shiraz"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Nasir Al Mulk Mosque Shiraz</string>
+  <string
+      name="strahov_theological_library"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Strahov Theological Library</string>
+  <string
+      name="sorrisniva_igloohotel_in_norway"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sorrisniva Igloohotel in Norway</string>
+  <string
+      name="ho_king_commercial_centre"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Ho King Commercial Centre</string>
+  <string
+      name="sprinkenhof"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sprinkenhof</string>
+  <string
+      name="louvre_inner_court"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Louvre Inner Court</string>
+  <string
+      name="burj_plaza_downtown_dubai"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Burj Plaza Downtown Dubai</string>
+  <string
+      name="pratinha_cave"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Pratinha Cave</string>
+  <string
+      name="autostadt_wolfsburg_autoturm"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Autostadt Wolfsburg -  Autoturm</string>
+  <string
+      name="milky_way_over_ross_castle"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Milky Way over Ross Castle</string>
+  <string
+      name="prague_aerial_photo_from_pisecka_brana"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Prague Aerial Photo from Pisecka Brana</string>
+  <string
+      name="venice_skyline_the_magic_view"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Venice skyline - the magic view</string>
+  <string
+      name="prague_from_a_balloon"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Prague from a Balloon</string>
+  <string
+      name="golden_gate_bridge_from_the_air"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Golden Gate Bridge From the Air</string>
+  <string
+      name="monument_valley"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Monument Valley</string>
+  <string
+      name="south_rim_grand_canyon_arizona"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >South Rim Grand Canyon Arizona</string>
+  <string
+      name="swarm_of_bees_by_the_beehive"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Swarm of Bees by the Beehive</string>
+  <string
+      name="ahu_tongariki"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Ahu Tongariki</string>
+  <string
+      name="turaida_castle_in_autumn_aerial_panorama_sigulda_latvia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Turaida Castle in autumn - aerial panorama, Sigulda, Latvia</string>
+  <string
+      name="eiffel_tower_a_360_panoramic_view_from_the_top_deck"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Eiffel Tower: a 360° panoramic view from the top deck</string>
+  <string
+      name="temple_of_luxor"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Temple Of Luxor</string>
+  <string
+      name="chapmans_peak_cape_of_good_hope_south_africa"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Chapman\'s Peak, Cape of Good Hope, South Africa</string>
+  <string
+      name="sunrise_over_the_ngorongoro_crater_tanzania"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sunrise over the Ngorongoro Crater, Tanzania</string>
+  <string
+      name="cuba_maria_la_gorda_pier"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Cuba, Maria La Gorda, Pier</string>
+  <string
+      name="grand_canyon_sunset"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Grand Canyon Sunset</string>
+  <string
+      name="henan_celestial_mountaintianjieshanscenic_areathe_ladder_in_the_sky"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Henan celestial Mountain(Tianjieshan)Scenic Area--the Ladder in the sky</string>
+  <string
+      name="la_pedrera_or_mila_house_barcelona"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >la pedrera or mila house. Barcelona</string>
+  <string
+      name="drift_wood_shelter"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Drift Wood Shelter</string>
+  <string
+      name="over_looking_nelson"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Over Looking Nelson</string>
+  <string
+      name="machu_picchu_backsteps"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Machu Picchu backsteps</string>
+  <string
+      name="wat_arun_overlooking_chao_phraya_river_bangkok_thailand"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Wat Arun Overlooking Chao Phraya River [Bangkok, Thailand]</string>
+  <string
+      name="atatrk_giant_monument_under_construction_on_30_november_2011"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Atatürk giant Monument under Construction on 30 November 2011</string>
+  <string
+      name="cloister_at_the_night"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >cloister at the night</string>
+  <string
+      name="torre_estrelada"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Torre estrelada</string>
+  <string
+      name="_500_x_charlemagne_on_the_katschhof"
+        project="oculus-360-photos"
+        description="The title of a panorama."
+      >500 x Charlemagne on the Katschhof</string>
+  <string
+      name="puente_hierro"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Puente Hierro</string>
+  <string
+      name="penguins_south_georgia_island"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Penguins, South Georgia Island</string>
+  <string
+      name="an_old_abandoned_iranian_house"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >An old abandoned Iranian house</string>
+  <string
+      name="teatro_romano"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Teatro Romano</string>
+  <string
+      name="selinunte_hera_temple"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Selinunte Hera Temple</string>
+  <string
+      name="neemrana_fort_amphitheatre"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Neemrana Fort Amphitheatre</string>
+  <string
+      name="stourhead_grotto"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Stourhead Grotto</string>
+  <string
+      name="coliseum_1st_floor"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Coliseum. 1st floor</string>
+  <string
+      name="enez_castle"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Enez Castle</string>
+  <string
+      name="ancient_town_thila_with_water_reservoir_yemen"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Ancient town Thila with water reservoir - Yemen</string>
+  <string
+      name="jupiter_bacchus"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Jupiter \u0026 Bacchus</string>
+  <string
+      name="fori_imperiali_foro_di_cesare"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Fori Imperiali - Foro di Cesare</string>
+  <string
+      name="view_from_the_roof_ksar_of_at_ben_haddou_morocco"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >View from the roof - Ksar of Aït Ben Haddou - Morocco</string>
+  <string
+      name="university_of_glasgow_undercroft"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >University of Glasgow, Undercroft</string>
+  <string
+      name="piazza_del_duomo_san_gimignano"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Piazza del Duomo, San Gimignano</string>
+  <string
+      name="jan_2011_bethesda_terrace"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Jan 2011 Bethesda Terrace</string>
+  <string
+      name="untitled"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Untitled</string>
+  <string
+      name="monterosso_al_mare_cinque_terre_italy"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Monterosso al Mare, Cinque Terre, Italy</string>
+  <string
+      name="petronas_towers"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Petronas Towers</string>
+  <string
+      name="time_ball_tower_sdermalm_stockholm"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Time Ball Tower Södermalm Stockholm</string>
+  <string
+      name="bonaparte_bridge_in_lyon"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Bonaparte Bridge in Lyon</string>
+  <string
+      name="view_over_sibiu_old_town_centre_from_a_church_tower"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >View over Sibiu old town centre from a church tower</string>
+  <string
+      name="toledo_the_door_of_cambrn"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Toledo, the door of Cambrón</string>
+  <string
+      name="hongkong_lippo_center"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Hongkong - Lippo Center</string>
+  <string
+      name="wat_sa_si_sukhothai_historical_park"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Wat Sa Si, Sukhothai Historical Park</string>
+  <string
+      name="national_library_budapest"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >National Library Budapest</string>
+  <string
+      name="vajdahunyad_castle_budapest"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Vajdahunyad Castle Budapest</string>
+  <string
+      name="chateau_des_ducs_de_bretagne_nantes"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Chateau des Ducs de Bretagne Nantes</string>
+  <string
+      name="guildford_castle"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Guildford Castle</string>
+  <string
+      name="santuario_de_las_lajas_ipiales_colombia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Santuario de las Lajas, Ipiales Colombia</string>
+  <string
+      name="theogefiro"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Theogefiro</string>
+  <string
+      name="muse_dpartemental_de_loise"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Musée départemental de l\'Oise</string>
+  <string
+      name="the_ancient_amphitheatre_in_plovdiv_bulgaria"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The ancient amphitheatre in Plovdiv, Bulgaria</string>
+  <string
+      name="world_war_ll_memorial"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >World War ll Memorial</string>
+  <string
+      name="us_capitol_east_front_dawn"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >US Capitol, East Front, Dawn</string>
+  <string
+      name="bears_cave"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Bears\' Cave</string>
+  <string
+      name="sunset_on_the_remarkable_rocks"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sunset on the Remarkable Rocks</string>
+  <string
+      name="suworow_monument_and_devils_bridge_on_the_gotthard_route_in_switzerland"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Suworow Monument and Devil\'s Bridge on the Gotthard route in Switzerland</string>
+  <string
+      name="mountain_cat"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Mountain Cat</string>
+  <string
+      name="manpupunyor_plateau_sunrise"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Manpupunyor Plateau. Sunrise.</string>
+  <string
+      name="duvugardur_saksun"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Duvugardur, Saksun</string>
+  <string
+      name="the_devils_lake_in_the_nera_gorges"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The Devil\'s Lake in the Nera Gorges</string>
+  <string
+      name="biak_na_bato_cave_san_miguel_bulacan_philippines"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Biak Na Bato Cave, San Miguel, Bulacan, Philippines</string>
+  <string
+      name="evening_on_the_bottom_of_the_driedout_end_of_lake_bicaz"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Evening on \"the bottom\" of the dried-out end of lake Bicaz</string>
+  <string
+      name="lijiangyunnan_maoniuping_sunrise"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Lijiang-yunnan MAONIUPING Sunrise</string>
+  <string
+      name="wonderful_winter_landscape_at_sunset_in_straja"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Wonderful winter landscape at sunset in Straja</string>
+  <string
+      name="above_the_old_river_bridge_along_the_middle_fork_in_west_glacier_montana"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Above the Old River Bridge along the Middle Fork in West Glacier, Montana</string>
+  <string
+      name="the_north_pole_90n3"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The North Pole 90°N-3</string>
+  <string
+      name="gapang_beach_pulau_weh_indonesia"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Gapang Beach, Pulau Weh, Indonesia</string>
+  <string
+      name="inside_tien_son_cave_in_phong_nha_cave_quang_binh_dng_tin_son_phong_nha"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Inside Tien Son cave in Phong Nha cave, Quang Binh (Dông Tiên Son, Phong Nha)</string>
+  <string
+      name="col_de_larc_close_to_pic_st_michel_on_the_edge_of_the_vercors"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Col de l\'Arc close to Pic St Michel on the edge of the Vercors</string>
+  <string
+      name="autumn_landscape_of_torres_del_paine_patagonia_chile"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Autumn Landscape of Torres del Paine, Patagonia, Chile</string>
+  <string
+      name="perito_moreno_argentina"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Perito moreno. argentina</string>
+  <string
+      name="the_silent_listeners"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >the silent listeners</string>
+  <string
+      name="ice_cave_on_durmitor_near_zabljak_2"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Ice Cave On Durmitor Near Zabljak 2</string>
+  <string
+      name="patagonic_rainbow"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Patagonic Rainbow</string>
+  <string
+      name="sunset_from_preikestolen_over_lysefjorden_norway"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Sunset from Preikestolen over Lysefjorden - Norway</string>
+  <string
+      name="glasgow_cathedral_at_night"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Glasgow Cathedral at Night</string>
+  <string
+      name="kremikovtsy_monastery_the_old_church_from_14th_century"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Kremikovtsy Monastery - The old church from 14-th century</string>
+  <string
+      name="muhammadalimosquesaladinocastlecairo6"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Muhammad-Ali-Mosque-Saladino-Castle-Cairo-6</string>
+  <string
+      name="thalupulamma_thalli_ammavari_temple_lova"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Thalupulamma Thalli Ammavari Temple, Lova</string>
+  <string
+      name="the_old_forge_thielemann_in_ahnatalheckershausen"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >The old forge \"Thielemann\" in Ahnatal-Heckershausen</string>
+  <string
+      name="general_motors_futureliner_restoration_project"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >General Motors Futureliner- restoration project</string>
+  <string
+      name="belmore_park_sydney"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Belmore Park (Sydney)</string>
+  <string
+      name="bluenebula"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >BlueNebula</string>
+  <string
+      name="carmo_convent_portugal"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Carmo Convent (Portugal)</string>
+  <string
+      name="chateau_de_gruyeres_garden_switzerland"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Chateau de Gruyeres garden (Switzerland)</string>
+  <string
+      name="honda"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >Honda</string>
+  <string
+      name="la_gare_de_doleville_france"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >La gare de Dole-Ville (France)</string>
+  <string
+      name="letang_des_bruyeres_france"
+      project="oculus-360-photos"
+      description="The title of a panorama."
+      >LEtang des Bruyeres (France)</string>
+  <string
+      name="the_milky_way"
+      project="oculus-360-photos"
+      description="The title of a panorama of the Milky Way galaxy."
+      >The Milky Way</string>
+  <string
+      name="torre_belem_portugal"
+      project="oculus-360-photos"
+      description="The title of a panorama of Torre Belem tower in Portugal."
+      >Torre Belem (Portugal)</string>
+</resources>

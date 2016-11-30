@@ -1,0 +1,16 @@
+rootProject.projectDir = new File(settingsDir, '.')
+rootProject.name = "OculusRoot"
+
+include ':VrAppFramework:Projects:AndroidPrebuilt', \
+':VrAppSupport:VrLocale:Projects:AndroidPrebuilt', \
+':VrAppSupport:VrSound:Projects:AndroidPrebuilt', \
+':VrAppSupport:VrGUI:Projects:AndroidPrebuilt'
+
+include ':LibOVRKernel:Projects:Android', \
+':VrCapture:Projects:Android', \
+':VrApi:Loader:Projects:Android', \
+':VrAppFramework:Projects:Android', \
+':VrAppSupport:VrGUI:Projects:Android', \
+':VrAppSupport:VrLocale:Projects:Android', \
+':VrAppSupport:VrModel:Projects:Android', \
+':VrAppSupport:VrSound:Projects:Android'

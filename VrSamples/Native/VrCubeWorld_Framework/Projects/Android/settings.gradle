@@ -1,0 +1,9 @@
+rootProject.projectDir = new File(settingsDir, '../../../../..')
+rootProject.name = "VrCubeWorld_Framework"
+
+include ':', \
+	'VrAppFramework:Projects:AndroidPrebuilt', \
+	'VrAppSupport:VrLocale:Projects:AndroidPrebuilt', \
+	'VrAppSupport:VrSound:Projects:AndroidPrebuilt', \
+	'VrSamples:Native:VrCubeWorld_Framework:Projects:Android', \
+	'VrAppSupport:VrGUI:Projects:AndroidPrebuilt'

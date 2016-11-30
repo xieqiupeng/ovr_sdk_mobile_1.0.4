@@ -1,0 +1,102 @@
+import org.gradle.internal.os.OperatingSystem;
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+    }
+}
+
+def GetNDKBuildCmd() {
+
+    def ndkDir = System.getenv('ANDROID_NDK_HOME')
+    if (ndkDir == null) {
+        ndkDir = System.getenv('ANDROID_NDK')
+    }
+    if (ndkDir == null) {
+        ndkDir = System.getenv('NDKROOT')
+    }
+    if (ndkDir == null) {
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        ndkDir = properties.getProperty('ndk.dir')
+    }
+    if (ndkDir == null) {
+        throw new GradleException('NDK not found! Check your environment for ANDROID_NDK or your local.properties contains ndk.dir')
+    }
+    if (OperatingSystem.current().isWindows()) {
+        return ndkDir + '/ndk-build.cmd'
+    } else {
+        return ndkDir + '/ndk-build'
+    }
+}
+
+class VrPrebuiltPlugin implements Plugin<Project> {
+    void apply(Project project) {
+        project.configurations.create('default')
+        def rawName = project.path.replaceFirst(/.*:(\w+):Projects:AndroidPrebuilt.*/, '$1')
+        project.artifacts.add('default', project.file("../../Libs/Android/aar/debug/${rawName}.aar"))
+        if (project.hasProperty("buildType") && project.buildType != "clean") {
+            rawName = (rawName == "VrApi") ? "VrApi-Loader" : rawName
+            project.artifacts.add('default', project.file("../../Libs/Android/aar/${project.buildType}/${rawName}.aar"))
+        }
+    }
+}
+
+subprojects {
+    if (project.file("build.gradle").exists()) {
+        project.gradle.startParameter.taskNames.each { taskName ->
+            if (taskName == "assembleDebug" || taskName == "assembleRelease" || taskName == "clean") {
+                if (project.hasProperty("buildType")) {
+                    //throw new GradleException( "cannot configure multiple build tasks" )
+                }
+                project.ext.buildType = taskName - "assemble"
+            }
+        }
+    }
+
+    if (project.path.contains("AndroidPrebuilt")) {
+        apply plugin: VrPrebuiltPlugin
+    }
+
+    task NDKBuildRelease(type: NDKBuildTask) {
+        isNDKDebug = false
+    }
+
+    task NDKBuildDebug(type: NDKBuildTask) {
+        isNDKDebug = true
+    }
+
+    task NDKBuildClean() << {
+        exec {
+            commandLine GetNDKBuildCmd(), 'clean'
+        }
+        delete project.file("obj")
+        delete project.file("bin")
+        delete project.file("libs")
+    }
+}
+
+class NDKBuildTask extends DefaultTask {
+
+    @Input
+    Boolean isNDKDebug
+
+    // at some point, this will have source files as input,
+    // but that will wait until we have better integration with the ndk plugin
+    @TaskAction
+    def NDKBuild() {
+        project.exec {
+            if (project.hasProperty("buildType")) {
+                environment "BUILDTYPE", project.buildType
+            }
+            Integer debugFlag = isNDKDebug ? 1 : 0
+            commandLine project.GetNDKBuildCmd(), 'V=0', '-j10', "NDK_DEBUG=${debugFlag}", "OVR_DEBUG=${debugFlag}",
+                    '-j', Runtime.runtime.availableProcessors(),
+                    '-C', project.buildDir.parent
+        }
+    }
+}

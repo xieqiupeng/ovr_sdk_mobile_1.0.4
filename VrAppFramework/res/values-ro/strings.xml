@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- See fburl.com/140690840 for information about i18n on Android -->
+<!-- @generated -->
+<!-- FB Locale: ro_RO -->
+
+<resources exclude-from-buck-resource-map="true">
+    <string name="swipe_to_browse" gender="unknown">Trage pentru a răsfoi</string>
+    <string name="out_of_memory" gender="unknown">Pentru a folosi Oculus 360 Photos, te rugăm să eliberezi cel puţin %1$sKB din spaţiul de stocare al telefonului.</string>
+</resources>

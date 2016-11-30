@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- See fburl.com/140690840 for information about i18n on Android -->
+<!-- @generated -->
+<!-- FB Locale: es_LA -->
+
+<resources exclude-from-buck-resource-map="true">
+    <string name="app_name" gender="unknown">Oculus 360 Photos</string>
+    <string name="action_settings" gender="unknown">Configuración</string>
+    <string name="mobile_notifications" gender="unknown">Notificaciones en el celular</string>
+    <string name="mobile_notifications_message" gender="unknown">Recibe actualizaciones cuando se agregue contenido nuevo a 360 Photos</string>
+    <string name="cell_data_title" gender="unknown">Uso de datos del celular</string>
+    <string name="cell_data_message" gender="unknown">Activa el uso de datos cuando no hay conexión Wi-Fi.</string>
+    <string name="cell_data_alert_message" gender="unknown">Actualmente no estás conectado a una red Wi-Fi. ¿Quieres cargar fotos con tu plan de datos?</string>
+    <string name="cell_data_alert_enable" gender="unknown">Activar</string>
+    <string name="cell_data_alert_cancel" gender="unknown">Cancelar</string>
+    <string name="categories_title" gender="unknown">Categorías</string>
+    <string name="unspecified_author" gender="unknown">Autor no especificado</string>
+    <string name="on_device" gender="unknown">En el dispositivo</string>
+    <string name="on_device_empty_title" gender="unknown">Para ver tus propias fotos panorámicas en Oculus 360 Photos:</string>
+    <string name="on_device_empty_instructions" gender="unknown">Para ver tus fotos panorámicas, guárdalas en la galería del teléfono.</string>
+    <string name="favorites_empty_title" gender="unknown">Actualmente no tienes fotos en tu lista de favoritos</string>
+    <string name="remove_from_favorites" gender="unknown">Eliminar de favoritos</string>
+    <string name="add_to_favorites" gender="unknown">Agregar a favoritos</string>
+    <string name="slideshow_mode" gender="unknown">Modo de presentación</string>
+    <string name="favorites_empty" gender="unknown">Toca el icono del corazón cuando veas una foto que quieras agregar a tus favoritos.</string>
+    <string name="more_of" gender="unknown">Más de %1$s</string>
+    <string name="by" gender="unknown">de %1$s</string>
+    <string name="media_not_found" gender="unknown">No hay ninguna foto en tu teléfono. Inserta la tarjeta SD que se incluye con tu Gear VR.</string>
+    <string name="favorites" gender="unknown">Favoritos</string>
+    <string name="error_nowifi" gender="unknown">No se pudo conectar a Oculus 360 Photos. Puedes seguir viendo tus fotos mientras estás desconectado.</string>
+    <string name="error_noconnection" gender="unknown">No se pudo conectar a Oculus 360 Photos. Vuelve a intentarlo más tarde.</string>
+    <string name="error_loading_file" gender="unknown">Error al cargar la foto.</string>
+    <string name="wifi_required" gender="unknown">Se requiere Wi-Fi</string>
+    <string name="landscapes" gender="unknown">Paisajes</string>
+    <string name="underwater" gender="unknown">Vistas submarinas</string>
+    <string name="mars" gender="unknown">Marte</string>
+    <string name="night_sky" gender="unknown">Cielo nocturno</string>
+    <string name="landmarks" gender="unknown">Lugares de referencia</string>
+    <string name="architecture" gender="unknown">Arquitectura</string>
+    <string name="cities" gender="unknown">Ciudades</string>
+    <string name="ancient" gender="unknown">Monumentos históricos</string>
+    <string name="unusual" gender="unknown">Poco habituales</string>
+    <string name="worship" gender="unknown">De culto</string>
+    <string name="abandoned" gender="unknown">Sitios abandonados</string>
+    <string name="ahu_tongariki_in_easter_island" gender="unknown">Ahu Tongariki, Isla de Pascua</string>
+    <string name="tunis_coliseum_upper_level" gender="unknown">Piso superior del Coliseo de Túnez</string>
+    <string name="abhaneri_step_well_" gender="unknown">Aljibe escalonado de Abhaneri</string>
+    <string name="the_mayan_city_state_of_palenque" gender="unknown">Ciudad-estado maya de Palenque</string>
+    <string name="machu_picchu" gender="unknown">Machu Picchu</string>
+    <string name="another_silkcotton_tree_at_ta_prohm" gender="unknown">Otro árbol de algodón de seda en Ta Prohm</string>
+    <string name="glendalough" gender="unknown">Glendalough</string>
+    <string name="the_bayon_towers_of_smiling_faces_cambodia" gender="unknown">Bayón; torres con caras sonrientes [Camboya]</string>
+    <string name="pellegrina_tomb_chiusi" gender="unknown">Tumba de la Peregrina, Chiusi</string>
+    <string name="gym_pripyat_chernobyl" gender="unknown">Gimnasio, Prípiat, Chernóbil</string>
+    <string name="main_square_pripyat_chernobyl" gender="unknown">Plaza central, Prípiat, Chernóbil</string>
+    <string name="swimming_pool_pripyat_chernobyl" gender="unknown">Piscina en Prípiat, Chernóbil</string>
+    <string name="the_ferris_wheel_pripyat_chernobyl" gender="unknown">Rueda de la fortuna, Prípiat, Chernóbil</string>
+    <string name="schweppes_neon_in_gran_via_madrid" gender="unknown">Anuncio luminoso de Schweppes, Gran Vía, Madrid</string>
+    <string name="barcelona_from_via_laietana" gender="unknown">Barcelona desde Via Laietana</string>
+    <string name="sheikh_zayed" gender="unknown">Sheikh Zayed</string>
+    <string name="the_louvre_paris_france" gender="unknown">Museo del Louvre, París, Francia</string>
+    <string name="tv_tower_berlin_2012" gender="unknown">Torre de televisión de Berlín en 2012</string>
+    <string name="john_hancock_center" gender="unknown">John Hancock Center</string>
+    <string name="fondamenta_de_la_preson_a_venezia" gender="unknown">Fondamenta de Venecia</string>
+    <string name="venice_rialtobridge" gender="unknown">Puente de Rialto, Venecia</string>
+    <string name="view_from_eiffel_tower" gender="unknown">Vista desde la Torre Eiffel</string>
+    <string name="empire_state_building_full_360_aerial_manhattan_panorama" gender="unknown">Vista aérea panorámica de 360º de Manhattan desde el edificio Empire State</string>
+    <string name="calgary_zoo" gender="unknown">Zoológico de Calgary</string>
+    <string name="las_vegas_from_the_eiffel_tower" gender="unknown">Las Vegas desde la Torre Eiffel</string>
+    <string name="gondole_a_venezia" gender="unknown">Góndola en Venecia</string>
+    <string name="aerial_panorama_of_shinjuku_shot_from_a_helicopter" gender="unknown">Panorámica aérea de Shinjuku tomada desde un helicóptero</string>
+    <string name="clock_tower_after_sunrise" gender="unknown">Torre del Reloj después del atardecer</string>
+    <string name="madinet_habu_path_to_second_court" gender="unknown">Madinet Habu: camino al segundo pabellón</string>
+    <string name="petra_treasury_al_khazneh_jordan" gender="unknown">El Tesoro de Petra (Al Khazneh), Jordania</string>
+    <string name="eau_claire_calgary" gender="unknown">Eau Claire, Calgary</string>
+    <string name="fitz_roy_valley_at_magic_hour" gender="unknown">Valle Fitz Roy a la hora mágica</string>
+    <string name="horseshoe_bend_after_sunset" gender="unknown">Atardecer en la Curva de la Herradura</string>
+    <string name="upper_antelope_canyon" gender="unknown">Cañón del Antílope</string>
+    <string name="del_norte_redwoods_state_park" gender="unknown">Parque Estatal Del Norte de Redwoods</string>
+    <string name="snowy_river" gender="unknown">Río Snowy</string>
+    <string name="hanging_bridge_over_a_crack_in_the_tsingy" gender="unknown">Puente colgante en una grieta del Tsingy</string>
+    <string name="halong_bay_3" gender="unknown">Bahía de Ha Long 3</string>
+    <string name="animal_flower_cave" gender="unknown">Cueva Animal Flower</string>
+    <string name="phi_phi_lay_pileh_lagoon_thailand" gender="unknown">Phi Phi Lay, laguna Pileh, Tailandia</string>
+    <string name="mono_lake" gender="unknown">Lago Mono</string>
+    <string name="partnachklamm" gender="unknown">Partnachklamm</string>
+    <string name="amphitheater_terraces_of_batad_banaue_ifugao" gender="unknown">Anfiteatro de arrozales de Batad, Banaue, Ifugao</string>
+    <string name="quesillococha_lake" gender="unknown">Laguna Quesillococha</string>
+    <string name="the_tree_the_sunset" gender="unknown">El árbol y el atardecer</string>
+    <string name="faehlensee_and_bollenwees" gender="unknown">Faehlensee y Bollenwees</string>
+    <string name="torres_del_paine_at_sunrise" gender="unknown">Torres del Paine al amanecer</string>
+    <string name="gathering_storm_over_french_valley" gender="unknown">Oscuros nubarrones sobre el French Valley</string>
+    <string name="aggitis_cave" gender="unknown">Cueva de Aggitis</string>
+    <string name="inside_white_whale_rock_white_desert_" gender="unknown">Interior de la roca de la ballena blanca en el Desierto Blanco</string>
+    <string name="mars_panorama_curiosity_rover_martian_night" gender="unknown">Panorámica de Marte, rover Curiosity: noche marciana</string>
+    <string name="mars_panorama_curiosity_rover_martian_solar_day_613" gender="unknown">Panorámica de Marte, rover Curiosity: día solar marciano 613</string>
+    <string name="mars_panorama_curiosity_rover_martian_solar_day_437" gender="unknown">Panorámica de Marte, rover Curiosity: día solar marciano 437</string>
+    <string name="mars_panorama_curiosity_rover_martian_solar_day_2" gender="unknown">Panorámica de Marte, rover Curiosity: día solar marciano 2</string>
+    <string name="cape_spear_and_the_milky_way" gender="unknown">Cabo Spear y la Vía Láctea</string>
+    <string name="paepalanthus_galactic" gender="unknown">Paepalanthus sideral</string>
+    <string name="the_elephant_and_the_milkyway" gender="unknown">El elefante y la Vía Láctea</string>
+    <string name="sao_bento_waterfall_startrail_vortex" gender="unknown">Vórtice, \"star trail\" en las Cascadas de São Bento</string>
+    <string name="man_owar_milky_way" gender="unknown">Vía láctea de Man O\'war</string>
+    <string name="northern_light_near_kiruna" gender="unknown">Aurora boreal cerca de Kiruna</string>
+    <string name="shiva_temple_65_foot_tall_lord_shiva_lingam" gender="unknown">Lord Shiva Lingam de 20 metros de alto en el Templo de Shiva</string>
+    <string name="yungang_grottoes_v_cave" gender="unknown">Grutas de Yungang: cueva del siglo V</string>
+    <string name="zayed_mosque_abu_dhabi" gender="unknown">Mezquita Zayed, Abu Dabi</string>
+    <string name="dambulla_cave_temple_fifth_cave_sri_lanka" gender="unknown">Templo de la Cueva de Dambulla, quinta cueva, Sri Lanka</string>
+    <string name="szeged_synagogue" gender="unknown">Sinagoga Szeged</string>
+    <string name="aljamas_mosque_with_square_in_shibam_hadramawt_yemen" gender="unknown">Mezquita de AlJama y plaza en Shibam, Hadramawt, Yemen</string>
+    <string name="fluctuation_follows_olho_dagua_river" gender="unknown">Río Olho d\'Água</string>
+    <string name="pratinha_lake" gender="unknown">Lago Pratinha</string>
+    <string name="maldives_gan" gender="unknown">Isla Gan, Maldivas</string>
+    <string name="sea_turtles_chelonia_mydas_amedee_new_caledonia" gender="unknown">Tortugas marinas (Chelonia mydas) en Amédée, Nueva Caledonia</string>
+    <string name="diving_new_caledonia_amedee_island" gender="unknown">Submarinismo en Nueva Caledonia, isla de Amédée</string>
+    <string name="coral_reef_fish_new_caledonia" gender="unknown">Peces de los arrecifes de coral en Nueva Caledonia</string>
+    <string name="flight_above_the_clouds" gender="unknown">Vuelo sobre las nubes</string>
+    <string name="abu_dabab_garden" gender="unknown">Abu Dabbab</string>
+    <string name="diving_with_sharks" gender="unknown">Buceo con tiburones</string>
+    <string name="mysterious_lagoon" gender="unknown">Laguna misteriosa</string>
+    <string name="giant_trevally_welcome_new_caledonia" gender="unknown">Saludo de Caranx ignobilis en Nueva Caledonia</string>
+    <string name="old_projector_room_at_cinema_modern_suceava" gender="unknown">Antigua sala de proyección en Cinema Modern, Suceava</string>
+    <string name="planet_of_the_apes" gender="unknown">Planeta de los simios</string>
+    <string name="large_helical_device" gender="unknown">Gran dispositivo helicoidal</string>
+    <string name="bird_fish_feeding_frenzy_new_caledonia" gender="unknown">Aves alborotadas comiendo peces, Nueva Caledonia</string>
+    <string name="national_aircraft_inc_airplane_junk_yard" gender="unknown">National Aircraft Inc.: restos de un avión</string>
+    <string name="inside_a_decommissioned_us_navy_c117d_iceland" gender="unknown">Interior de un C-117D desmantelado de la Marina de los Estados Unidos, Islandia</string>
+    <string name="yulong_bridgeyangshuoguilin" gender="unknown">Puente de Yulong, Yangshuo, Guilin</string>
+    <string name="church_in_zeliszow" gender="unknown">Iglesia de Zeliszow</string>
+    <string name="beneath_lower_byron_glacier" gender="unknown">Bajo el Glaciar de Byron</string>
+    <string name="supertree_grove_gardens_by_the_bay_singapore" gender="unknown">Supertree Grove, Gardens by the Bay, Singapur</string>
+    <string name="monumenta_2012_grand_palais_daniel_buren" gender="unknown">Monumenta 2012, Daniel Buren en el Gran Palacio de París</string>
+    <string name="henan_jiaozuo_world_geological_park_yuntai_mountain_9mastixia_peak_elevation_1308_meters" gender="unknown">Montaña Yuntai, Parque geológico mundial, Jiaozuo (Henan), mastixia, altitud de 1308 metros</string>
+    <string name="ankarafantsika_np_canyon" gender="unknown">Cañón en el Parque Nacional de Ankarafantsika</string>
+    <string name="gwalia_historic_workshop" gender="unknown">Taller de la histórica Gwalia</string>
+    <string name="mysterious_lagoon_diving" gender="unknown">Buceo en la Laguna Misteriosa</string>
+    <string name="histroric_alabama_theatre" gender="unknown">Histórico teatro de Alabama</string>
+    <string name="dorset_lulworth_durdle_door_sunset" gender="unknown">Atardecer en Durdle Door, Lulworth, Dorset</string>
+    <string name="flying_over_tokyo_in_a_golden_sunset" gender="unknown">Vuelo sobre Tokio al atardecer</string>
+    <string name="piazza_san_marco_at_night_venice_italy" gender="unknown">Plaza San Marco de noche, Venecia, Italia</string>
+    <string name="slheimajkulsvegur_glacier" gender="unknown">Glaciar Sólheimajökulsvegur</string>
+    <string name="the_wave" gender="unknown">The Wave</string>
+    <string name="ruhrgas" gender="unknown">Ruhrgas</string>
+    <string name="nasir_al_mulk_mosque_shiraz" gender="unknown">Mezquita Nasir al-Mulk, Shiraz</string>
+    <string name="strahov_theological_library" gender="unknown">Sala Teológica de la Biblioteca del Monasterio Strahov</string>
+    <string name="sorrisniva_igloohotel_in_norway" gender="unknown">Sorrisniva Igloo Hotel en Noruega</string>
+    <string name="ho_king_commercial_centre" gender="unknown">Centro comercial Ho King</string>
+    <string name="sprinkenhof" gender="unknown">Sprinkenhof</string>
+    <string name="louvre_inner_court" gender="unknown">Patio interior del Louvre</string>
+    <string name="burj_plaza_downtown_dubai" gender="unknown">Burj Plaza en Centro Dubái</string>
+    <string name="pratinha_cave" gender="unknown">Cueva Pratinha</string>
+    <string name="autostadt_wolfsburg_autoturm" gender="unknown">Autostadt en Wolfsburg: Autoturm</string>
+    <string name="milky_way_over_ross_castle" gender="unknown">La Vía Láctea sobre el Castillo de Ross</string>
+    <string name="prague_aerial_photo_from_pisecka_brana" gender="unknown">Foto aérea de Praga desde la Puerta de Písek</string>
+    <string name="venice_skyline_the_magic_view" gender="unknown">Silueta de Venecia: la vista mágica</string>
+    <string name="prague_from_a_balloon" gender="unknown">Praga desde un globo</string>
+    <string name="golden_gate_bridge_from_the_air" gender="unknown">Puente Golden Gate visto desde el cielo</string>
+    <string name="monument_valley" gender="unknown">Valle de los Monumentos</string>
+    <string name="south_rim_grand_canyon_arizona" gender="unknown">Borde sur del Gran Cañón, Arizona</string>
+    <string name="swarm_of_bees_by_the_beehive" gender="unknown">Enjambre de abejas junto a la colmena</string>
+    <string name="ahu_tongariki" gender="unknown">Ahu Tongariki</string>
+    <string name="turaida_castle_in_autumn_aerial_panorama_sigulda_latvia" gender="unknown">Vista aérea panorámica del castillo de Turaida en otoño, Sigulda, Letonia</string>
+    <string name="eiffel_tower_a_360_panoramic_view_from_the_top_deck" gender="unknown">Torre Eiffel: vista panorámica de 360° desde el piso superior</string>
+    <string name="temple_of_luxor" gender="unknown">Templo de Luxor</string>
+    <string name="chapmans_peak_cape_of_good_hope_south_africa" gender="unknown">Pico Chapman, Cabo de Buena Esperanza, Sudáfrica</string>
+    <string name="sunrise_over_the_ngorongoro_crater_tanzania" gender="unknown">Amanecer en el cráter del Ngorongoro, Tanzania</string>
+    <string name="cuba_maria_la_gorda_pier" gender="unknown">Muelle de María La Gorda, Cuba</string>
+    <string name="grand_canyon_sunset" gender="unknown">Atardecer en el Gran Cañón</string>
+    <string name="henan_celestial_mountaintianjieshanscenic_areathe_ladder_in_the_sky" gender="unknown">Vista espectacular de la Montaña Celestial de Henán (Tianjieshan): escalera en el cielo</string>
+    <string name="la_pedrera_or_mila_house_barcelona" gender="unknown">La Pedrera (Casa Milà), Barcelona</string>
+    <string name="drift_wood_shelter" gender="unknown">Refugio de madera de deriva</string>
+    <string name="over_looking_nelson" gender="unknown">Nelson desde el mirador</string>
+    <string name="machu_picchu_backsteps" gender="unknown">Escaleras traseras del Machu Picchu</string>
+    <string name="wat_arun_overlooking_chao_phraya_river_bangkok_thailand" gender="unknown">Vista del río Chao Phraya desde Wat Arun (Bangkok, Tailandia)</string>
+    <string name="atatrk_giant_monument_under_construction_on_30_november_2011" gender="unknown">Monumento gigante a Atatürk en construcción, 30 de noviembre de 2011</string>
+    <string name="cloister_at_the_night" gender="unknown">Claustro de noche</string>
+    <string name="torre_estrelada" gender="unknown">Torre estrelada</string>
+    <string name="_500_x_charlemagne_on_the_katschhof" gender="unknown">500 réplicas de Carlomagno en Katschhof</string>
+    <string name="puente_hierro" gender="unknown">Puente Hierro</string>
+    <string name="penguins_south_georgia_island" gender="unknown">Pingüinos, Islas Georgias del Sur</string>
+    <string name="an_old_abandoned_iranian_house" gender="unknown">Antigua casa iraní abandonada</string>
+    <string name="teatro_romano" gender="unknown">Teatro Romano</string>
+    <string name="selinunte_hera_temple" gender="unknown">Templo de Hera, Selinunte</string>
+    <string name="neemrana_fort_amphitheatre" gender="unknown">Fuerte de Neemrana</string>
+    <string name="stourhead_grotto" gender="unknown">Gruta de Stourhead</string>
+    <string name="coliseum_1st_floor" gender="unknown">Coliseo, primer piso</string>
+    <string name="enez_castle" gender="unknown">Castillo Enez</string>
+    <string name="ancient_town_thila_with_water_reservoir_yemen" gender="unknown">Antigua ciudad de Thila con reserva de agua, Yemen</string>
+    <string name="jupiter_bacchus" gender="unknown">Júpiter y Baco</string>
+    <string name="fori_imperiali_foro_di_cesare" gender="unknown">Foros imperiales: foro de César</string>
+    <string name="view_from_the_roof_ksar_of_at_ben_haddou_morocco" gender="unknown">Vista desde la terraza, Ksar de Ait Ben Hadu, Marruecos</string>
+    <string name="university_of_glasgow_undercroft" gender="unknown">Universidad de Glasgow, Undercroft</string>
+    <string name="piazza_del_duomo_san_gimignano" gender="unknown">Piazza del Duomo, San Gimignano</string>
+    <string name="jan_2011_bethesda_terrace" gender="unknown">Bethesda Terrace, enero de 2011</string>
+    <string name="untitled" gender="unknown">Sin título</string>
+    <string name="monterosso_al_mare_cinque_terre_italy" gender="unknown">Monterosso al Mare, Cinque Terre, Italia</string>
+    <string name="petronas_towers" gender="unknown">Torres Petronas</string>
+    <string name="time_ball_tower_sdermalm_stockholm" gender="unknown">Torre de Södermalm, Estocolmo</string>
+    <string name="bonaparte_bridge_in_lyon" gender="unknown">Puente de Bonaparte en Lyon</string>
+    <string name="view_over_sibiu_old_town_centre_from_a_church_tower" gender="unknown">Vista del centro del casco antiguo de Sibiu desde un campanario</string>
+    <string name="toledo_the_door_of_cambrn" gender="unknown">Puerta del Cambrón, Toledo</string>
+    <string name="hongkong_lippo_center" gender="unknown">Lippo Centre de Hong Kong</string>
+    <string name="wat_sa_si_sukhothai_historical_park" gender="unknown">Wat Sa Si, Parque Histórico Sukhothai</string>
+    <string name="national_library_budapest" gender="unknown">Biblioteca Nacional de Budapest</string>
+    <string name="vajdahunyad_castle_budapest" gender="unknown">Castillo de Vajdahunyad, Budapest</string>
+    <string name="chateau_des_ducs_de_bretagne_nantes" gender="unknown">Castillo de los duques de Bretaña, Nantes</string>
+    <string name="guildford_castle" gender="unknown">Castillo de Guildford</string>
+    <string name="santuario_de_las_lajas_ipiales_colombia" gender="unknown">Santuario de las Lajas, Ipiales, Colombia</string>
+    <string name="theogefiro" gender="unknown">Theogefiro</string>
+    <string name="muse_dpartemental_de_loise" gender="unknown">Museo departamental de L´Oise</string>
+    <string name="the_ancient_amphitheatre_in_plovdiv_bulgaria" gender="unknown">Antiguo anfiteatro en Plovdiv, Bulgaria</string>
+    <string name="world_war_ll_memorial" gender="unknown">Monumento Nacional a la Segunda Guerra Mundial</string>
+    <string name="us_capitol_east_front_dawn" gender="unknown">Fachada oriental del Capitolio de los Estados Unidos al amanecer</string>
+    <string name="bears_cave" gender="unknown">Cueva del oso</string>
+    <string name="sunset_on_the_remarkable_rocks" gender="unknown">Atardecer en Remarkable Rocks</string>
+    <string name="suworow_monument_and_devils_bridge_on_the_gotthard_route_in_switzerland" gender="unknown">Monumento Suworow y el Puente del Diablo en el Paso de San Gotardo en Suiza</string>
+    <string name="mountain_cat" gender="unknown">Monte Gato</string>
+    <string name="manpupunyor_plateau_sunrise" gender="unknown">Meseta de Man-Pupu-Nyor al amanecer.</string>
+    <string name="duvugardur_saksun" gender="unknown">Duvugardur, Saksun</string>
+    <string name="the_devils_lake_in_the_nera_gorges" gender="unknown">Lago del Diablo en Nera Gorges</string>
+    <string name="biak_na_bato_cave_san_miguel_bulacan_philippines" gender="unknown">Cueva de Biak-na-Bató, San Miguel, Bulacán, Filipinas</string>
+    <string name="evening_on_the_bottom_of_the_driedout_end_of_lake_bicaz" gender="unknown">Anochecer en \"el fondo\" de la Garganta del Bicaz</string>
+    <string name="lijiangyunnan_maoniuping_sunrise" gender="unknown">Amanecer en Maoniuping, Lijiang, Yunnan</string>
+    <string name="wonderful_winter_landscape_at_sunset_in_straja" gender="unknown">Maravilloso paisaje invernal al atardecer en Straja</string>
+    <string name="above_the_old_river_bridge_along_the_middle_fork_in_west_glacier_montana" gender="unknown">Sobre el viejo puente de la bifurcación central en West Glacier, Montana</string>
+    <string name="the_north_pole_90n3" gender="unknown">El Polo Norte 90º N-3</string>
+    <string name="gapang_beach_pulau_weh_indonesia" gender="unknown">Playa Gapang, Pulau Weh, Indonesia</string>
+    <string name="inside_tien_son_cave_in_phong_nha_cave_quang_binh_dng_tin_son_phong_nha" gender="unknown">Interior de la cueva de Tien Son en la Gruta de Phong Nha, Quảng Bình (Dông Tiên Son, Phong Nha)</string>
+    <string name="col_de_larc_close_to_pic_st_michel_on_the_edge_of_the_vercors" gender="unknown">Col de l\'Arc cerca del pico Saint Michel en el límite del Vercors</string>
+    <string name="autumn_landscape_of_torres_del_paine_patagonia_chile" gender="unknown">Paisaje otoñal de Torres del Paine, Patagonia, Chile</string>
+    <string name="perito_moreno_argentina" gender="unknown">Perito Moreno, Argentina</string>
+    <string name="the_silent_listeners" gender="unknown">los oyentes silenciosos</string>
+    <string name="ice_cave_on_durmitor_near_zabljak_2" gender="unknown">Cueva de hielo en Durmitor, cerca de Žabljak</string>
+    <string name="patagonic_rainbow" gender="unknown">Arcoíris patagónico</string>
+    <string name="sunset_from_preikestolen_over_lysefjorden_norway" gender="unknown">Atardecer desde Preikestolen sobre el fiordo de Lyse, Noruega</string>
+    <string name="glasgow_cathedral_at_night" gender="unknown">Catedral de Glasgow a la noche</string>
+    <string name="kremikovtsy_monastery_the_old_church_from_14th_century" gender="unknown">Monasterio de Kremikovtzi, una antigua iglesia del siglo XIV</string>
+    <string name="muhammadalimosquesaladinocastlecairo6" gender="unknown">Mezquita de Muhammad Alí, Ciudadela de Saladino, El Cairo</string>
+    <string name="thalupulamma_thalli_ammavari_temple_lova" gender="unknown">Templo Thalupulamma Thalli Ammavari, Lova</string>
+    <string name="the_old_forge_thielemann_in_ahnatalheckershausen" gender="unknown">Antigua fragua \"Thielemann\" en Ahnatal-Heckershausen</string>
+    <string name="general_motors_futureliner_restoration_project" gender="unknown">Futureliner de General Motors: proyecto de restauración</string>
+    <string name="belmore_park_sydney" gender="unknown">Parque Belmore (Sídney)</string>
+    <string name="bluenebula" gender="unknown">Nébula azul</string>
+    <string name="carmo_convent_portugal" gender="unknown">Convento del Carmo (Portugal)</string>
+    <string name="chateau_de_gruyeres_garden_switzerland" gender="unknown">Jardines del castillo de Gruyères (Suiza)</string>
+    <string name="honda" gender="unknown">Honda</string>
+    <string name="la_gare_de_doleville_france" gender="unknown">Estación de Dole-Ville (Francia)</string>
+    <string name="letang_des_bruyeres_france" gender="unknown">L\'Etang des Bruyères (Francia)</string>
+    <string name="the_milky_way" gender="unknown">La Vía Láctea</string>
+    <string name="torre_belem_portugal" gender="unknown">Torre de Belém (Portugal)</string>
+</resources>

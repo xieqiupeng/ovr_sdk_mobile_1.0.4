@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- See fburl.com/140690840 for information about i18n on Android -->
+<!-- @generated -->
+<!-- FB Locale: el_GR -->
+
+<resources exclude-from-buck-resource-map="true">
+    <string name="swipe_to_browse" gender="unknown">Σύρετε για αναζήτηση</string>
+    <string name="out_of_memory" gender="unknown">Για να χρησιμοποιήσετε τη δυνατότητα Oculus 360 Photos, ελευθερώστε χώρο τουλάχιστον %1$s KB από το χώρο αποθήκευσης της συσκευής.</string>
+</resources>

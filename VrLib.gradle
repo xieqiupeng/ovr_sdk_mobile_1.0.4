@@ -1,0 +1,140 @@
+class VrLibPlugin implements Plugin<Project> {
+
+    Project project = null
+    Boolean ndkOnly = null // denotes a project that only builds from native sources
+    File libDir = null
+    Map<String, ?> libName = [:]
+
+    void initLibName() {
+        // in the future, when NDK building is more tightly coupled with gradle ( IE no separate Android.mk ), we will be able to
+        // determine these names from the module names, rather than divining them with special cases
+        def rawName = project.path.replaceFirst(/.*:(\w+):Projects:Android.*/, '$1')
+        def ndklibName = "lib${rawName.toLowerCase()}"
+
+        if (project.path.contains("VrApi")) {
+            if (rawName == "Loader") {
+                ndklibName = "libvrapi"
+            }
+            if (rawName == "Impl") {
+                ndklibName = "libvrapiimpl"
+            }
+            rawName = "VrApi-$rawName"
+            libDir = project.file("../../../Libs/Android")
+        } else {
+            libDir = project.file("../../Libs/Android")
+        }
+
+        if (rawName == "OpenGL_Loader") {
+            ndklibName = 'openglloader'
+        }
+        if (rawName == "LibOVRKernel") {
+            ndklibName = 'libovrkernel'
+        }
+
+        libName = [
+                "a"  : "${ndklibName}.a",
+                "so" : "${ndklibName}.so",
+                "aar": "${rawName}.aar"
+        ]
+    }
+
+    void initBuildConfig(String taskName, String buildType) {
+
+        Task buildTask = project.tasks["NDKBuild${buildType.capitalize()}"]
+
+        buildTask.finalizedBy project.tasks.create("CopyLibs${buildType.capitalize()}", NDKLibCopyTask) {
+            outputDir = libDir
+            staticLibs = project.fileTree(dir: 'obj/local', include: "**/${libName.a}")
+            sharedLibs = project.fileTree(dir: 'libs', include: "**/${libName.so}")
+        }
+
+        // key on which projects need android lib rules based on whether their build file includes the android library plugin.  In the future, it might be nice to make this distinction on another property
+        // and conditionally include the plugin here, but ultimately ( when we use android's built-in NDK support ), we will almost certainly end up including it in all build projects anyway
+        if (ndkOnly) {
+            project.tasks[taskName].dependsOn(buildTask)
+        } else {
+            File libDirBundle = new File(libDir.path + "/aar/${buildType}")
+            // in theory, we should be able to just search for an element on this list, but for some reason, the method I try
+            // haven't worked
+            project.android.libraryVariants.all { variant ->
+                if (variant.name.capitalize() == buildType) {
+                    Zip bundleTask = project.tasks["bundle$buildType"]
+                    bundleTask.destinationDir = libDirBundle
+                    bundleTask.dependsOn ndkCompile
+                    bundleTask.archiveName = libName.aar
+
+                    variant.ndkCompile.dependsOn(buildTask)
+                    variant.registerResGeneratingTask(ndkCompile, libDir)
+
+                }
+            }
+        }
+    }
+
+    void apply(Project project) {
+
+        this.project = project
+
+        if (!project.hasProperty("buildType")) {
+            return
+        }
+        initLibName()
+
+        project.afterEvaluate {
+            def taskName = (project.buildType == "clean") ? project.buildType : "assemble" + project.buildType
+            ndkOnly = (project.hasProperty('android') == false || project.android.hasProperty('libraryVariants') == false)
+            if (ndkOnly) {
+                // if the plugin isn't included, this should mean no plugin is defining build tasks for the project. Create a dummy for the task being called ( if it isn't defined )
+                Try:
+                project.tasks.create(taskName)
+            }
+
+            if (taskName == "clean") {
+                project.tasks[taskName] << {
+                    if (libDir) {
+                        project.logger.lifecycle "Deleting Libs"
+                        project.delete libDir
+                    }
+                }
+                project.tasks[taskName].finalizedBy project.tasks.NDKBuildClean
+            } else {
+                initBuildConfig(taskName, project.buildType)
+            }
+        }
+    }
+}
+
+class NDKLibCopyTask extends DefaultTask {
+
+    @InputFiles
+    FileTree staticLibs
+
+    @InputFiles
+    FileTree sharedLibs
+
+    @OutputDirectory
+    File outputDir
+
+    @TaskAction
+    def NDKLibCopy(IncrementalTaskInputs inputs) {
+        inputs.outOfDate { InputFileDetails change ->
+            project.logger.lifecycle "Copying ${change.file.name} into Libs"
+            def arch = change.file.parentFile.name
+            project.copy {
+                from change.file
+                into "$outputDir/$arch/${project.buildType}"
+            }
+
+            // this step will be removed once we add arches/product flavors
+            // to gradle build with android
+            if (arch == "armeabi-v7a") {
+                project.copy {
+                    from change.file
+                    into "$outputDir/$arch-hard/${project.buildType}"
+                }
+            }
+        }
+    }
+}
+
+apply plugin: VrLibPlugin 

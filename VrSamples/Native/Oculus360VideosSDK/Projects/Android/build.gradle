@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+apply from: "${rootProject.projectDir}/VrApp.gradle"
+
+def Rxbinding_Version = '0.4.0'
+
+dependencies {
+    compile project(':VrAppFramework:Projects:AndroidPrebuilt')
+    compile project(':VrAppSupport:VrGUI:Projects:AndroidPrebuilt')
+    compile project(':VrAppSupport:VrLocale:Projects:AndroidPrebuilt')
+    compile project(':VrAppSupport:VrSound:Projects:AndroidPrebuilt')
+    //
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+//    compile "com.jakewharton.rxbinding:rxbinding:$Rxbinding_Version"
+//    compile "com.jakewharton.rxbinding:rxbinding-appcompat-v7:$Rxbinding_Version"
+//    compile "com.jakewharton.rxbinding:rxbinding-design:$Rxbinding_Version"
+}
+
+android {
+    project.archivesBaseName = "oculus360videossdk"
+
+    defaultConfig {
+        applicationId "com.oculus.oculus360videossdk"
+    }
+
+    compileSdkVersion 19
+    buildToolsVersion '23.0.1'
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['../../java']
+            jniLibs.srcDir 'libs'
+            res.srcDirs = ['../../res']
+            assets.srcDirs = ['../../assets']
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.7
+        sourceCompatibility 1.7
+    }
+}

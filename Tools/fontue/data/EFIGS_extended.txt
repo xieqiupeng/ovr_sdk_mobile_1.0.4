@@ -1,0 +1,22 @@
+Dutch
+Ĳ ĳ Ÿ
+Finnish / Estonian
+Š š Ž ž
+Turkish
+İ ı Ğ ğ Ş ş
+French
+Œ œ Ÿ
+Czech
+Č č Ř ř Š š Ž ž Ď ď Ť ť Ň ň Ů ů Ě ě
+Hungarian
+Ő ő Ű ű
+Romanian
+Ă ă Ș ș Ț ț Ţ ţ
+Portugese
+º ª
+Russian
+А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я 
+а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я
+Polish
+Ą ą Ć ć Ę ę Ł ł Ń ń Ó ó Ś ś Ź ź Ż ż
+Greek
