@@ -29,8 +29,7 @@ import com.oculus.vrappframework.VrActivity;
 import java.io.IOException;
 
 import static android.content.Context.MODE_PRIVATE;
-
-public class MainActivity extends VrActivity implements SurfaceTexture.OnFrameAvailableListener,
+public class MainActivity extends VrActivity implements android.graphics.SurfaceTexture.OnFrameAvailableListener,
         MediaPlayer.OnVideoSizeChangedListener,
         MediaPlayer.OnCompletionListener,
         MediaPlayer.OnErrorListener,
@@ -291,15 +290,14 @@ public class MainActivity extends VrActivity implements SurfaceTexture.OnFrameAv
             try {
                 Log.v(TAG, "mediaPlayer.setDataSource()");
                 mediaPlayer.setDataSource(pathName);
+                try {
+                    Log.v(TAG, "mediaPlayer.prepare");
+                    mediaPlayer.prepare();
+                } catch (IOException t) {
+                    Log.e(TAG, "mediaPlayer.prepare failed:" + t.getMessage());
+                }
             } catch (IOException t) {
                 Log.e(TAG, "mediaPlayer.setDataSource failed");
-            }
-
-            try {
-                Log.v(TAG, "mediaPlayer.prepare");
-                mediaPlayer.prepare();
-            } catch (IOException t) {
-                Log.e(TAG, "mediaPlayer.prepare failed:" + t.getMessage());
             }
             Log.v(TAG, "mediaPlayer.start");
 
