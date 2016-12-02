@@ -113,7 +113,28 @@ void Java_com_oculus_oculus360videossdk_MainActivity_nativeVideoStartError( JNIE
 	OVR::Oculus360Videos * videos = static_cast< OVR::Oculus360Videos * >( ( ( OVR::App * )interfacePtr )->GetAppInterface() );
 	videos->GetMessageQueue().PostPrintf( "startError" );
 }
+// TODO
+void Java_com_oculus_oculus360videossdk_MainActivity_nativeVideoStart( JNIEnv *jni, jclass clazz, jlong interfacePtr, int name)
+{
+    LOG("nativeVideoStart");
 
+    OVR::Oculus360Videos * videos = static_cast< OVR::Oculus360Videos * >(((OVR::App *)interfacePtr)->GetAppInterface());
+    videos->GetMessageQueue().PostPrintf("startVideo %i",name);
+}
+void Java_com_oculus_oculus360videossdk_MainActivity_nativeVideo3D( JNIEnv *jni, jclass clazz, jlong interfacePtr, int is3D)
+{
+    LOG("nativeVideo3D");
+
+    OVR::Oculus360Videos * videos = static_cast< OVR::Oculus360Videos * >(((OVR::App *)interfacePtr)->GetAppInterface());
+    videos->GetMessageQueue().PostPrintf("set3D %i",is3D);
+}
+void Java_com_oculus_oculus360videossdk_MainActivity_nativeVideoStop( JNIEnv *jni, jclass clazz, jlong interfacePtr)
+{
+    LOG("nativeVideoStop");
+
+    OVR::Oculus360Videos * videos = static_cast< OVR::Oculus360Videos * >(((OVR::App *)interfacePtr)->GetAppInterface());
+    videos->GetMessageQueue().PostPrintf("stopVideo");
+}
 } // extern "C"
 
 #endif
@@ -462,11 +483,18 @@ void Oculus360Videos::LeavingVrMode()
 
 bool Oculus360Videos::OnKeyEvent( const int keyCode, const int repeatCount, const KeyEventType eventType )
 {
+    LOG( "Oculus360Videos::keyCodeEvent %d", static_cast< int >( keyCode ) );
+	return true;
 	if ( GuiSys->OnKeyEvent( keyCode, repeatCount, eventType ) )
 	{
 		return true;
 	}
-
+	// TODO
+    if (keyCode == OVR_KEY_HOME || keyCode == OVR_KEY_BACK){
+        LOG( "Oculus360Videos::keyCodeHome %d", static_cast< int >( OVR_KEY_HOME ) );
+        LOG( "Oculus360Videos::keyCodeInside %d", static_cast< int >( keyCode ) );
+        return true;
+    }
 	if ( ( ( keyCode == OVR_KEY_BACK ) && ( eventType == KEY_EVENT_SHORT_PRESS ) ) ||
 		 ( ( keyCode == OVR_KEY_BUTTON_B ) && ( eventType == KEY_EVENT_UP ) ) )
 	{
@@ -486,9 +514,21 @@ bool Oculus360Videos::OnKeyEvent( const int keyCode, const int repeatCount, cons
 	{
 		PauseVideo( true );
 	}
-
 	return false;
 }
+
+    void Oculus360Videos::TwirlingStart() {
+        LOG("GetCurrentState %d", GetCurrentState());
+        SetMenuState(MENU_VIDEO_LOADING);
+        if (name == 82 || is3D == 3) {
+            VideoName = "_TB.mp4";
+        } else {
+			VideoName = "1.mp4";
+            if (ActiveVideo) {
+                VideoName = ActiveVideo->Url;
+            }
+        }
+    }
 
 void Oculus360Videos::Command( const char * msg )
 {
@@ -539,7 +579,24 @@ void Oculus360Videos::Command( const char * msg )
 		GuiSys->ShowInfoText( 4.5f, message.ToCStr() );
 		SetMenuState( MENU_BROWSER );
 		return;
-	}
+	}else if (MatchesHead("startVideo", msg)) {
+                LOG("Oculus360Videos::startVideo");
+                sscanf(msg, "startVideo %i", &name);
+                TwirlingStart();
+                return;
+            }
+    		 else if (MatchesHead("set3D", msg)) {
+                LOG("Oculus360Videos::set3D");
+                sscanf(msg, "set3D %i", &is3D);
+                return;
+            }
+            else if (MatchesHead("stopVideo", msg)) {
+                LOG("Oculus360Videos::stopVideo");
+                StopVideo();
+                SetMenuState(MENU_BROWSER);
+                return;
+            }
+
 }
 
 Matrix4f Oculus360Videos::TexmForVideo( const int eye )
@@ -877,6 +934,7 @@ ovrFrameResult Oculus360Videos::Frame( const ovrFrameInput & vrFrame )
 		const int repeatCount = vrFrame.Input.KeyEvents[i].RepeatCount;
 		const KeyEventType eventType = vrFrame.Input.KeyEvents[i].EventType;
 
+        //LOG( "Oculus360Videos::keyCodeFrame %d", static_cast< int >( keyCode ) );
 		if ( OnKeyEvent( keyCode, repeatCount, eventType ) )
 		{
 			continue;   // consumed the event

@@ -12,15 +12,17 @@ import com.oculus.oculus360videossdk.client.Client01Command;
 import com.oculus.oculus360videossdk.client.Client02;
 import com.oculus.oculus360videossdk.client.Client03;
 import com.oculus.oculus360videossdk.client.Constants;
+import com.oculus.oculus360videossdk.client.HomeKeyLocker;
 
 import java.lang.ref.WeakReference;
-import java.util.logging.Logger;
 
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
+
+import static android.R.attr.name;
 
 /**
  * Created by xieqi on 2016/9/19.
@@ -153,8 +155,8 @@ public class App extends Application {
                                     Constants.state = miliseconds;
                                 } else if (str.startsWith("COMMAND_PLAY_")) {
                                     String string = "COMMAND_PLAY_";
-                                    String name = str.substring(string.length(), str.length());
-                                    String path = Constants.PAPH_OCULUS + name;
+                                    Constants.FILE_NAME = str.substring(string.length(), str.length());
+                                    String path = Constants.PAPH_OCULUS + Constants.FILE_NAME;
                                     Log.w(Client01Command.class.getSimpleName(), path);
                                     if (Constants.state == 1) {
                                         activity.resumeMovie();

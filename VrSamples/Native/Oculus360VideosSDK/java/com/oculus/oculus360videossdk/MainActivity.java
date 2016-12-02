@@ -12,6 +12,7 @@
  *************************************************************************************/
 package com.oculus.oculus360videossdk;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences.Editor;
@@ -23,12 +24,15 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.Surface;
+import android.view.WindowManager;
 
+import com.oculus.oculus360videossdk.client.HomeKeyLocker;
 import com.oculus.vrappframework.VrActivity;
 
 import java.io.IOException;
 
 import static android.content.Context.MODE_PRIVATE;
+
 public class MainActivity extends VrActivity implements android.graphics.SurfaceTexture.OnFrameAvailableListener,
         MediaPlayer.OnVideoSizeChangedListener,
         MediaPlayer.OnCompletionListener,
@@ -82,10 +86,17 @@ public class MainActivity extends VrActivity implements android.graphics.Surface
     }
 
     // ==================================================================================
+    HomeKeyLocker mHomeKeyLocker = null;
 
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate enter");
+//        this.getWindow().addPrivateFlags(WindowManager.LayoutParams.PRIVATE_FLAG_HOMEKEY_DISPATCHED);
         super.onCreate(savedInstanceState);
+//        HomeKeyEventBroadCastReceiver receiver = new HomeKeyEventBroadCastReceiver();
+//        registerReceiver(receiver, new IntentFilter(Intent.ACTION_CLOSE_SYSTEM_DIALOGS));
+        //
+        mHomeKeyLocker = new HomeKeyLocker();
+//        mHomeKeyLocker.lock(this);
         //
         Intent intent = getIntent();
         String commandString = VrActivity.getCommandStringFromIntent(intent);
@@ -100,8 +111,9 @@ public class MainActivity extends VrActivity implements android.graphics.Surface
     @Override
     protected void onDestroy() {
         Log.d(TAG, "onDestroy");
-
         // Abandon audio focus if we still hold it
+        mHomeKeyLocker.unlock();
+        mHomeKeyLocker = null;
         releaseAudioFocus();
         super.onDestroy();
     }
@@ -118,6 +130,8 @@ public class MainActivity extends VrActivity implements android.graphics.Surface
     // ==================================================================================
 
     public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
+
+
         Log.v(TAG, String.format("onVideoSizeChanged: %dx%d", width, height));
         if (width == 0 || height == 0) {
             Log.e(TAG, "The video size is 0. Could be because there was no video, no display surface was set, or the value was not determined yet.");
@@ -333,7 +347,10 @@ public class MainActivity extends VrActivity implements android.graphics.Surface
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
-        //
+//        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+//            Log.v(TAG, "dispatchKeyEvent back");
+//            mHomeKeyLocker.lock(MainActivity.this);
+//        }
         return true;
     }
 

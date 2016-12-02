@@ -11,9 +11,6 @@ dependencies {
     //
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxjava:1.1.6'
-//    compile "com.jakewharton.rxbinding:rxbinding:$Rxbinding_Version"
-//    compile "com.jakewharton.rxbinding:rxbinding-appcompat-v7:$Rxbinding_Version"
-//    compile "com.jakewharton.rxbinding:rxbinding-design:$Rxbinding_Version"
 }
 
 android {
@@ -21,9 +18,13 @@ android {
 
     defaultConfig {
         applicationId "com.oculus.oculus360videossdk"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 5
+        versionName "2.4.3"
     }
 
-    compileSdkVersion 19
+    compileSdkVersion 23
     buildToolsVersion '23.0.1'
 
     sourceSets {
